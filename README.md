@@ -4,10 +4,11 @@ SearchDelegate implementation made by myself in Flutter for Turkish Universities
 
 
 
-https://ibb.co/cvb1r1G
+[text](https://ibb.co/cvb1r1G
 
 https://ibb.co/C0YTVfP
 
 https://ibb.co/VxyGxr9
 
-https://ibb.co/N93PYBD
+https://ibb.co/N93PYBD)
+
