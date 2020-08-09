@@ -28,7 +28,6 @@ class UniversitySearch extends SearchDelegate<String> {
   List<Widget> buildResultList(BuildContext context) {
     List<Widget> resultList = List();
     Universities.getAll().forEach((element) {
-      String id = element["id"];
       if (element["name"]
               .toString()
               .trim()
@@ -52,7 +51,7 @@ class UniversitySearch extends SearchDelegate<String> {
                       width: 35,
                       height: 45,
                       placeholder: (context, error) => SpinnerBuilder(),
-                      imageUrl: "$logoUrl" + "$id.png",
+                      imageUrl: "$logoUrl" + "${element['id']}.png",
                     )),
                 SizedBox(width: MediaQuery.of(context).size.width / 16),
                 Flexible(
@@ -97,7 +96,6 @@ class UniversitySearch extends SearchDelegate<String> {
   List<Widget> buildSuggestionList(BuildContext context) {
     List<Widget> suggestionList = List();
     Universities.getAll().forEach((element) {
-      String id = element["id"];
       if (element["name"]
               .toString()
               .trim()
@@ -121,7 +119,7 @@ class UniversitySearch extends SearchDelegate<String> {
                       width: 35,
                       height: 45,
                       placeholder: (context, error) => SpinnerBuilder(),
-                      imageUrl: "$logoUrl" + "$id.png",
+                      imageUrl: "$logoUrl" + "${element['id']}.png",
                     )),
                 SizedBox(width: MediaQuery.of(context).size.width / 16),
                 Flexible(
